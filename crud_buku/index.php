@@ -19,7 +19,7 @@
       border: solid 1px #DDEEEE;
       border-collapse: collapse;
       border-spacing: 0;
-      width: auto;
+      width: 80;
       margin: 10px auto 10px auto;
     }
 
@@ -54,14 +54,22 @@
             color: #fff;
         }
 
+    td a {
+        display: block;
+        margin: 5px auto;
+        }
+
     .action-buttons {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        height: 100%;
 }
 
     .edit-button,
     .delete-button {
-        margin-right: 5px;
+        margin-right: 5px;
 }
 
 
@@ -109,7 +117,7 @@
           <td>Rp <?php echo number_format($row['harga_buku'],0,',','.'); ?></td>
           
           <td> 
-              <a href="edit_produk.php?id=<?php echo $row['id_buku']; ?>">Edit</a> <br>
+              <a href="edit_produk.php?id=<?php echo $row['id_buku']; ?>">Edit</a>
               <a href="proses_hapus.php?id=<?php echo $row['id_buku']; ?>" onclick="return confirm('Anda yakin akan menghapus data ini?')">Hapus</a> 
           </td>
       </tr>

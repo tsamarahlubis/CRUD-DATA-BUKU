@@ -38,6 +38,7 @@ include 'koneksi.php';
           font-size: 12px;
           border: 0px;
           margin-top: 20px;
+          border-radius: 0.5rem;
     }
     label {
       margin-top: 10px;
@@ -64,6 +65,7 @@ include 'koneksi.php';
       margin-left: auto;
       margin-right: auto;
       background: #ededed;
+      border-radius: 0.5rem;
     }
     </style>
   </head>
@@ -76,7 +78,7 @@ include 'koneksi.php';
         <input name="id_buku" value="<?php echo $data['id_buku']; ?>"  hidden />
         <div>
         
-        <div>
+      <div>
           <label>Gambar</label>
           <img src="gambar/<?php echo $data['gambar_buku']; ?>" style="width: 120px;float: left;margin-bottom: 5px;">
           <input type="file" name="gambar_buku" />
@@ -85,29 +87,36 @@ include 'koneksi.php';
           <label>Judul Buku</label>
           <input type="text" name="judul_buku" value="<?php echo $data['judul_buku']; ?>" autofocus="" required="" />
         </div>
+
         <div>
           <label>Nama Penulis</label>
          <input type="text" name="penulis_buku" value="<?php echo $data['penulis_buku']; ?>" />
         </div>
+
         <div>
           <label>Tahun Terbit</label>
          <input type="text" name="tahun_buku" value="<?php echo $data['tahun_buku']; ?>" />
         </div>
+
         <div>
           <label>Penerbit</label>
          <input type="text" name="penerbit_buku" value="<?php echo $data['penerbit_buku']; ?>" />
         </div>
+
         <div>
           <label>Jenis</label>
          <input type="text" name="jenis_buku" value="<?php echo $data['jenis_buku']; ?>" />
         </div>
+
         <div>
           <label>Harga Buku</label>
          <input type="text" name="harga_buku" required=""value="<?php echo $data['harga_buku']; ?>" />
         </div>
+
         <div>
          <button type="submit">Simpan Perubahan</button>
         </div>
+        
         </section>
       </form>
   </body>
