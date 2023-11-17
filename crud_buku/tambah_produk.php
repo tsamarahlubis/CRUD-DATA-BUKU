@@ -69,30 +69,36 @@
           <label>Judul Buku</label>
           <input type="text" name="judul_buku" autofocus="" required="" />
         </div>
+
         <div>
           <label>Nama Penulis</label>
          <input type="text" name="penulis_buku" />
         </div>
+
         <div>
           <label>Tahun Terbit</label>
          <input type="text" name="tahun_buku" required="" />
         </div>
+
         <div>
           <label>Penerbit</label>
          <input type="text" name="penerbit_buku" required="" />
         </div>
+
         <div>
           <label>Jenis Buku</label>
          <input type="text" name="jenis_buku" required="" />
         </div>
+
         <div>
           <label>Harga</label>
          <input type="text" name="harga_buku" required="" />
         </div>
-        <div>
+
         <div>
          <button type="submit">Simpan Produk</button>
         </div>
+
         </section>
       </form>
   </body>
