@@ -22,12 +22,15 @@
           font-size: 12px;
           border: 0px;
           margin-top: 20px;
+          border-radius: 0.5rem;
+
     }
     label {
       margin-top: 10px;
       float: left;
       text-align: left;
       width: 100%;
+      
     }
     input {
       padding: 6px;
@@ -48,7 +51,9 @@
       margin-left: auto;
       margin-right: auto;
       background: #ededed;
+      border-radius: 1rem;
     }
+
     </style>
   </head>
   <body>
